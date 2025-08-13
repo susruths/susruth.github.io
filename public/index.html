@@ -1,1 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Susruth Sudhakaran – Resume</title>
+  <meta name="description" content="Resume of Susruth Sudhakaran – Staff Embedded / Platform Software Engineer with TSN expertise" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg: #0b1220;
+      --card: #0f172a;
+      --text: #e5e7eb;
+      --sub: #cbd5e1;
+      --accent: #60a5fa;
+      --muted: #94a3b8;
+      --chip: #1f2937;
+      --border: #1e293b;
+      --link: #93c5fd;
+      --print-text: #111827;
+    }
+    *{box-sizing: border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 20% -10%, rgba(96,165,250,.15), transparent 60%),
+                  radial-gradient(900px 600px at 120% 10%, rgba(56,189,248,.12), transparent 55%),
+                  var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale;
+    }
+    a{ color: var(--link); text-decoration: none; }
+    a:hover{ text-decoration: underline; }
+
+    .container{
+      max-width: 980px; margin: 0 auto; padding: 28px 20px 64px;
+    }
+    header{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), transparent);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 28px; margin-bottom: 18px;
+      backdrop-filter: blur(6px);
+    }
+    .top{
+      display: grid; grid-template-columns: 1fr; gap: 10px;
+    }
+    .name{ font-size: clamp(28px, 5vw, 40px); font-weight: 800; letter-spacing: .2px; }
+    .title{ font-size: 16px; color: var(--sub); font-weight: 500; }
+    .contact{ display: flex; flex-wrap: wrap; gap: 10px; margin-top: 6px; color: var(--muted); }
+    .contact a{ color: var(--sub); }
+    .pill{
+      display:inline-flex; align-items:center; gap:8px; padding:6px 10px; border-radius:999px;
+      background: rgba(99,102,241,.08); color: var(--sub); border: 1px solid var(--border); font-size: 12px; font-weight:600;
+    }
+    .section{ margin-top: 22px; background: var(--card); border:1px solid var(--border); border-radius: 18px; padding: 22px; }
+    .section h2{ margin: 0 0 10px; font-size: 18px; letter-spacing:.2px; text-transform: uppercase; color: var(--sub); font-weight: 700; }
+    .summary{ color: var(--text); font-size: 15px; }
+
+    .skills{ display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; }
+    .chip{ display:inline-block; background: var(--chip); color: var(--sub); border:1px solid var(--border); padding:6px 10px; border-radius:999px; font-size:12px; margin:4px 6px 0 0; }
+
+    .role{ border-left: 3px solid var(--accent); padding-left: 14px; margin: 18px 0 6px; }
+    .role h3{ margin:0; font-size: 16px; font-weight: 700; }
+    .meta{ color: var(--muted); font-size: 13px; margin-top:2px; }
+    .bullets{ margin: 10px 0 0 0; padding-left: 18px; }
+    .bullets li{ margin: 6px 0; }
+
+    .grid-2{ display:grid; grid-template-columns: 1.2fr .8fr; gap: 18px; }
+    @media (max-width: 860px){ .grid-2{ grid-template-columns: 1fr; } }
+
+    .tag-row{ margin-top: 10px; }
+
+    .footer-note{ color: var(--muted); font-size: 12px; margin-top: 10px; }
+
+    .btns{ display:flex; gap:10px; flex-wrap:wrap; margin-top: 12px; }
+    button.print{
+      background: var(--accent); border:none; color:#0b1220; font-weight:700; padding:8px 12px; border-radius:10px; cursor:pointer;
+    }
+    button.print:hover{ filter: brightness(1.05); }
+
+    /* Print Styles */
+    @media print{
+      body{ background: #fff; color: var(--print-text); }
+      header, .section{ background: #fff; border: 1px solid #e5e7eb; }
+      .name{ color: #111827; }
+      a{ color: #1f2937; text-decoration: none; }
+      .chip, .pill{ background: #f3f4f6; border-color: #e5e7eb; color:#111827; }
+      .btns{ display:none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="top">
+        <div>
+          <div class="name">Susruth Sudhakaran</div>
+          <div class="title">Staff Embedded / Platform Software Engineer · TSN, RTOS, Wireless & Networking</div>
+          <div class="contact">
+            <span class="pill">📍 Based in USA</span>
+            <a href="#" aria-label="Email">✉️ you@example.com</a>
+            <a href="#" aria-label="Phone">📞 (555) 555-5555</a>
+            <a href="https://www.linkedin.com/" target="_blank" rel="noopener">in/your-link</a>
+            <a href="https://yourname.github.io" target="_blank" rel="noopener">github.io/yourname</a>
+            <a href="https://github.com/" target="_blank" rel="noopener">github.com/yourname</a>
+          </div>
+          <div class="btns">
+            <button class="print" onclick="window.print()">🖨️ Print / Save PDF</button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="section summary">
+      <h2>Summary</h2>
+      <p>
+        Embedded systems leader with 19+ years building end-to-end wireless and networking software, platform middleware, and performance tooling. 
+        Specialized in Time-Sensitive Networking (TSN), RTOS/Linux, and device drivers for high-reliability, low-latency systems. 
+        Proven record turning prototypes into production features, creating cross-domain simulations (compute/physics/communications), and collaborating with standards bodies and product teams to ship impactful technology.
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Core Skills</h2>
+      <div class="skills">
+        <div>
+          <span class="chip">Embedded C/C++</span>
+          <span class="chip">RTOS (QNX/FreeRTOS)</span>
+          <span class="chip">Embedded Linux</span>
+          <span class="chip">Device Drivers & BSP</span>
+          <span class="chip">Board Bring-up · JTAG/SWD</span>
+          <span class="chip">Scripting (Python, Shell)</span>
+        </div>
+        <div>
+          <span class="chip">TSN: 802.1AS / 802.1Qbv / 802.1CB</span>
+          <span class="chip">PTP / gPTP</span>
+          <span class="chip">QoS · Shaping · Scheduling</span>
+          <span class="chip">Automotive & Industrial Ethernet</span>
+          <span class="chip">Wi‑Fi 6/7 · mmWave 60 GHz</span>
+        </div>
+        <div>
+          <span class="chip">Performance Profiling</span>
+          <span class="chip">Simulation & Modeling</span>
+          <span class="chip">Robotics (DDS QoS)</span>
+          <span class="chip">Validation & Automation</span>
+          <span class="chip">Cross‑functional Leadership</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Experience</h2>
+
+      <div class="role">
+        <h3>Intel Corporation — Principal / Senior Wireless Systems Engineer</h3>
+        <div class="meta">2005–2024 · Various engineering roles across prototyping, performance, and product integration</div>
+        <ul class="bullets">
+          <li><strong>TSN over Wi‑Fi:</strong> Implemented IEEE <strong>802.1AS</strong> time synchronization, <strong>802.1Qbv</strong> time-aware scheduling, and <strong>802.1CB</strong> redundancy in Intel Wi‑Fi device stacks.</li>
+          <li>Built methods, tools, and a testbed to configure, measure, and optimize TSN performance in Wi‑Fi networks, enabling broader TSN ecosystem adoption; co‑authored <strong>NIST</strong> white papers.</li>
+          <li>Improved <strong>time‑critical robotics</strong> performance by mapping <strong>DDS middleware QoS</strong> to Wi‑Fi TSN configurations; delivered a wireless robotics PoC demonstrating latency/jitter gains.</li>
+          <li>Created an <strong>ML‑based QoS scheduling framework</strong> for Wi‑Fi 7 (e.g., <strong>Triggered SCS</strong>, <strong>MSCS</strong>) to profile traffic and generate optimized schedules for real‑time applications.</li>
+          <li>Developed and integrated <strong>Linux broadband drivers</strong> and link configuration for Intel <strong>60 GHz mmWave</strong> multi‑antenna devices; engineered <strong>multi‑sector mesh backhaul</strong> (routing, load balancing, configuration).</li>
+          <li>Optimized <strong>beamforming</strong> performance and extended range on Intel 60 GHz modem antenna arrays via software and system‑level tuning.</li>
+          <li>Built an <strong>automated validation & certification framework</strong> for Intel Wi‑Fi and Centrino platforms (interoperability, performance, standards, security).</li>
+          <li>Reduced Windows field crash reports of Intel Wi‑Fi stack by <strong>50%+</strong> through Winqual‑driven RCA, targeted fixes, and test‑coverage improvements.</li>
+          <li><strong>Edge Robotics E2E Simulation:</strong> Designed a cross‑domain simulation model (compute, physics, communications) to study the impact of <strong>time sync</strong> & <strong>time‑aware shaping</strong> at scale, informing product architecture and deployment.</li>
+        </ul>
+        <div class="tag-row">
+          <span class="chip">C/C++</span>
+          <span class="chip">Python</span>
+          <span class="chip">PTP / 802.1AS</span>
+          <span class="chip">802.1Qbv · 802.1CB</span>
+          <span class="chip">Linux / RTOS</span>
+          <span class="chip">Wi‑Fi 7 QoS</span>
+          <span class="chip">mmWave 60 GHz</span>
+          <span class="chip">Automation</span>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <div class="role">
+        <h3>Bachelor of Engineering – Electronics & Communication</h3>
+        <div class="meta">[University Name]</div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Selected Highlights</h2>
+      <ul class="bullets">
+        <li>Shipped production‑grade embedded networking features used in millions of devices.</li>
+        <li>Created scalable simulation frameworks influencing platform and product decisions.</li>
+        <li>Designed validation automation reducing development cycle time and regressions.</li>
+      </ul>
+      <p class="footer-note">References and publications (incl. NIST white papers) available upon request.</p>
+    </section>
+  </div>
+</body>
+</html>
 
